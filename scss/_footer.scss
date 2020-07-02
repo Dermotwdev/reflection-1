@@ -103,6 +103,13 @@
         }
     } 
 }  
+.footer-about p {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.footer-about p:first-of-type {
+    padding-top: 15px;
+}
 .social {
     padding: 15px 0;
     display: flex;

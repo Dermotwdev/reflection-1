@@ -19,13 +19,10 @@ header {
     display: flex;
     padding: 0 15px;
     justify-content: space-between;
-        a { 
-            background: transparent;
-            margin: 5px 15px auto 0;
-        }
 } 
 .logo {
     max-width: 100%;
+    margin: 2.5px 7.5px auto 0;
 }
 #header-phone {
     margin: 25px 20px auto auto;
@@ -95,8 +92,10 @@ li.main-nav {
     left: 0px;
     padding: 0 15px;
     bottom: -43px;
-     ul a li {
+     ul li {
         display: inline;
+    }
+    ul li a {
         padding: 0 15px;
     }
 }

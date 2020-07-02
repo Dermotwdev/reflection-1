@@ -32,7 +32,7 @@ p {
   line-height: 1.5;
 }
 
-bold {
+strong {
   font-weight: 600;
 }
 
@@ -67,6 +67,7 @@ input {
   font-size: 1.04em;
   letter-spacing: 0.4px;
   text-align: center;
+  color: white;
 }
 
 .nav-container {
@@ -121,7 +122,7 @@ a.main-nav h4 {
 .card h3 {
   font-size: 1.2em;
 }
-.card button {
+.card .btn {
   color: white;
 }
 .card:hover {
@@ -143,6 +144,10 @@ a.main-nav h4 {
   font-size: 1.1em;
 }
 
+.news-btn {
+  color: white;
+}
+
 .news-summary p {
   font-size: 0.85em;
 }
@@ -154,15 +159,13 @@ a.main-nav h4 {
 .news-summary-1 h4 a {
   color: #926fb1;
 }
-.news-summary-1 h4 a:hover {
-  border-bottom: 1px solid #926fb1;
-}
 
 .news-summary-2 h4 a, .news-summary-3 h4 a {
   color: #4183d7;
 }
-.news-summary-2 h4 a:hover, .news-summary-3 h4 a:hover {
-  border-bottom: 1px solid #4183d7;
+
+.news-summary h4 a:hover {
+  text-decoration: underline;
 }
 
 .news-tag {
@@ -170,6 +173,10 @@ a.main-nav h4 {
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: 700;
+}
+
+.tag-link:hover {
+  text-decoration: underline;
 }
 
 .news-tooltip {
@@ -198,10 +205,13 @@ a.main-nav h4 {
   font-size: 1.2em;
 }
 .main-footer a:hover, .main-footer ul a:hover {
-  text-decoration: underline currentColor;
+  text-decoration: underline;
 }
 .main-footer a:active {
   color: #08080a;
+}
+.main-footer a {
+  color: white;
 }
 
 ul {
@@ -248,13 +258,10 @@ header {
   padding: 0 15px;
   justify-content: space-between;
 }
-.header-row a {
-  background: transparent;
-  margin: 5px 15px auto 0;
-}
 
 .logo {
   max-width: 100%;
+  margin: 2.5px 7.5px auto 0;
 }
 
 #header-phone {
@@ -329,8 +336,10 @@ a.main-nav h4 {
   padding: 0 15px;
   bottom: -43px;
 }
-.hide-nav ul a li {
+.hide-nav ul li {
   display: inline;
+}
+.hide-nav ul li a {
   padding: 0 15px;
 }
 
@@ -443,7 +452,8 @@ body {
   margin: auto;
 }
 .card a {
-  display: inline;
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 .card:hover .divider, .card:hover .btn, .card:hover .circle {
@@ -590,10 +600,6 @@ body {
 
 .news-tag-design {
   background: #926fb1;
-}
-
-.tag-link:hover {
-  text-decoration: underline white;
 }
 
 .news-img-container {
@@ -770,6 +776,15 @@ body {
 }
 .org-4:hover .colour {
   display: inline;
+}
+
+.footer-about p {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer-about p:first-of-type {
+  padding-top: 15px;
 }
 
 .social {
@@ -1075,6 +1090,11 @@ input {
   border-radius: 3px;
   padding: 15px;
   border: none;
+  display: flex;
+}
+
+.a-btn {
+  display: flex;
 }
 
 .support {
@@ -1115,6 +1135,7 @@ input {
 }
 
 .ham {
+  cursor: pointer;
   border-radius: 3px;
   margin: 0 0 0 20px;
   display: flex;
@@ -1190,15 +1211,14 @@ input {
   margin: 15px 10px;
 }
 
-.card button {
+.card .btn {
   margin: auto;
   border: none;
-  padding: 12px 15px;
   margin-bottom: 30px;
 }
 
 .news-btn {
-  margin: auto auto 30px 30px;
+  margin: 30px 0;
 }
 
 .news-btn-it {
@@ -1228,7 +1248,7 @@ input {
   margin: auto 8px 8px;
 }
 
-.header-row button svg {
+.header-row .btn svg {
   fill: white;
 }
 

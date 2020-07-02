@@ -22,14 +22,13 @@ h5 {
 p {
     line-height: 1.5;
 }
-bold {
+strong {
     font-weight: 600;
 }
 a, a:visited {
     text-decoration: none;
     color: currentcolor;
 }
-
 .ham {
     color: $light-text;
 }
@@ -52,6 +51,7 @@ input {
     font-size: 1.04em;
     letter-spacing: 0.4px;
     text-align: center;
+    color: $light-text;
 }
 .nav-container {
     color: $light-text;     
@@ -100,7 +100,7 @@ a.main-nav {
     h3 {
         font-size: 1.2em;
     }
-    button {
+    .btn {
         color: $light-text;
     }
     &:hover {
@@ -121,7 +121,9 @@ a.main-nav {
     font-size: 0.9em;
     font-size: 1.1em;
 }
-
+.news-btn {
+    color: $light-text;
+}
 .news-summary {
     p {
         font-size: 0.85em;
@@ -133,17 +135,13 @@ a.main-nav {
 }
 .news-summary-1 h4 a {
     color: $training;
-    &:hover {
-        border-bottom: 1px solid $training;
-    }
 }
-.news-summary-2 h4, .news-summary-3 h4 {
-    a {
+.news-summary-2 h4 a, .news-summary-3 h4 a {
         color: $it;
-        &:hover {
-            border-bottom: 1px solid $it;
-        }
     }
+
+.news-summary h4 a:hover {
+    text-decoration: underline;
 }
 
 .news-tag {
@@ -151,6 +149,9 @@ a.main-nav {
     text-transform: uppercase;
     font-size: 0.8em;
     font-weight: 700;
+}
+.tag-link:hover {
+    text-decoration: underline;
 }
 
 .news-tooltip {
@@ -178,10 +179,13 @@ a.main-nav {
         font-size: 1.2em;
     }
     a:hover, ul a:hover {
-        text-decoration: underline currentColor;
+        text-decoration: underline;
     }
     a:active {
         color: darken($dark-bg, 20%);
+    }
+    a {
+        color: white;
     }
 }
 
@@ -200,3 +204,4 @@ ul {
     text-align: center;
     font-size: 0.9em;
 }
+
