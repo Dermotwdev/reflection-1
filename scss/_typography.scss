@@ -56,6 +56,9 @@ input {
 .nav-container {
     color: $light-text;     
 }
+nav {
+    letter-spacing: 0;
+}
 
 a.main-nav {
     line-height: 1;
@@ -74,7 +77,7 @@ a.main-nav {
     color: $light-text; 
 }
 .sub-nav-content {
-    font-size: 0.85em;
+    font-size: 0.8em;
 }
 
 .banner-img {

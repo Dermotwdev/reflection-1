@@ -90,21 +90,35 @@ li.main-nav {
     width: 100%;
     z-index: 3;
     left: 0px;
-    padding: 0 15px;
+    padding: 0 20px;
     bottom: -43px;
      ul li {
+        padding: 0 0 0 20px;
         display: inline;
+        &::after {
+            content: "-";
+            padding-left: 20px;
+        }
+        &:last-of-type::after {
+            content: "";
+            padding: 0;
+        }
+        &:first-of-type {
+            padding-left: 0;
+        }
     }
-    ul li a {
-        padding: 0 15px;
-    }
+    // .sub-nav-content {
+    //     ul li {
+    //         padding-left: 0 ;
+    //     }
+    
 }
 
 .sub-nav-content {
     margin: 0 auto;
-    a:first-of-type li {
-        padding-left: 0;
-    }
+    // a:first-of-type li {
+    //     padding-left: 0;
+    // }
 }
 
 @for $i from 1 through 6 {

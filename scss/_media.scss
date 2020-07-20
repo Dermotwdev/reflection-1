@@ -227,6 +227,14 @@
         //     margin: 0px 15px auto 0;
         // }
     }
+    .hide-nav {
+        ul li {
+            padding: 0 0 0 30px;
+            &::after {
+                padding-left: 30px;
+            }
+        }
+    }
     .search-4 {
         display: inline;
     }
